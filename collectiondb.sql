@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectiondb
-# Generation Time: 2020-03-23 13:59:12 +0000
+# Generation Time: 2020-03-23 16:23:22 +0000
 # ************************************************************
 
 
@@ -42,10 +42,10 @@ VALUES
 	(2,'Fender','Stratocaster','Maple'),
 	(3,'Fender','Telecaster','Rosewood'),
 	(4,'Fender','Telecaster','Maple'),
-	(5,'Gibson','Les Paul','Rosewood'),
-	(6,'Gibson','Les Paul','Maple'),
-	(7,'Gibson','SG','Rosewood'),
-	(8,'Gibson','SG','Maple');
+	(5,'Fender','P Bass','Rosewood'),
+	(6,'Fender','P Bass','Maple'),
+	(7,'Fender','Jazz Base','Rosewood'),
+	(8,'Fender','Jazz Base','Maple');
 
 /*!40000 ALTER TABLE `guitars` ENABLE KEYS */;
 UNLOCK TABLES;

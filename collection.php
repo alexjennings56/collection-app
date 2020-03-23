@@ -12,33 +12,33 @@
         </div>
     </div>
 </header>
-<section id="portfolio" class="projectholder">
+<section id="collection" class="collectionholder">
     <div class="projects">
-        <div class="project1 pject">
+        <div class="guitar1 guitars">
             <img src="https://andertons-productimages.imgix.net/351619-0113010700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project2 pject">
+        <div class="guitar2 guitars">
             <img src="https://andertons-productimages.imgix.net/351635-0113012700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project3 pject">
+        <div class="guitar3 guitars">
             <img src="https://andertons-productimages.imgix.net/347985-0113060700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project4 pject">
+        <div class="guitar4 guitars">
             <img src="https://andertons-productimages.imgix.net/348009-0113062700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project5 pject">
+        <div class="guitar5 guitars">
             <img src="https://andertons-productimages.imgix.net/344839-0193610776_gtr_frt_001_rr.png?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project6 pject">
+        <div class="guitar6 guitars">
             <img src="https://andertons-productimages.imgix.net/339685-0193612776%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project7 pject">
+        <div class="guitar7 guitars">
             <img src="https://andertons-productimages.imgix.net/350640-0193900748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-        <div class="project8 pject">
+        <div class="guitar8 guitars">
             <img src="https://andertons-productimages.imgix.net/350605-0193902748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2"/>
         </div>
-    </div class="headingbox">
+    </div>
 </section>
 </body>
 </html>
