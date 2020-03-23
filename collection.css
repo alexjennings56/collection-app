@@ -1,0 +1,38 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+.topheader {
+	position: relative;
+	top: 0;
+}
+
+.logo {
+	background-color: #D2B48C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-bottom: solid;
+}
+
+.logotext {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	width: 60%;
+}
+@media only screen and (max-width: 900px) {
+  .logotext {
+	  font-size: 1rem;
+  }
+}
+
+.foreach {
+	font-size: 2rem;
+}

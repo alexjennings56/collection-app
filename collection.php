@@ -1,3 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="collection.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width,initial-scales=1"/>
+</head>
+<body>
+<header class="topheader">
+    <div class="logo">
+        <div class="logotext">
+            <h1>GUITAR COLLECTION</h1>
+        </div>
+    </div>
+</header>
+</body>
+</html>
+
 <?php
 
 $db = new PDO('mysql:host=DB;dbname=collectiondb', 'root', 'password');
@@ -11,9 +28,12 @@ echo "<ul>";
 
 foreach($data as $list){
 
-    echo "<br>Brand:".$list["brand"]."</br>";
-    echo "<br>Style:".$list["style"]."</br>";
-    echo "<br>Neck Wood:".$list["neckwood"]."</br>";
+    echo "<p>Brand: ".$list["brand"]."</p>";
+    echo "<p>Style: ".$list["style"]."</p>";
+    echo "<p>Neck Wood: ".$list["neckwood"]."</p>";
 }
 
 echo "</ul>";
+
+?>
+
