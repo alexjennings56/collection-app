@@ -24,7 +24,7 @@ function getGuitarBrandAndStyle(array $guitars): string {
     return "";
 }
 
-function displayGuitars($guitars) {
+function displayGuitars($guitars): string{
     $return = '';
     foreach ($guitars as $guitar) {
         $return .= '<article class="guitar">';
