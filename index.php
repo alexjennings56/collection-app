@@ -26,9 +26,9 @@ $guitars = getGuitar($db);
             Guitars"
                    src="<?php echo $guitar["instrument_url"] ?>" />
               <h1>
-                  Brand: <?php echo $guitar["brand"]; ?><br>
-                  Style: <?php echo $guitar["style"]; ?><br>
-                  Neck Wood: <?php echo $guitar["neckwood"]; ?>
+                  Brand: <?php echo $guitar["brand"]; ?>
+                  | Style: <?php echo $guitar["style"]; ?>
+                  | Neck Wood: <?php echo $guitar["neckwood"]; ?>
               </h1>
           </article>
       <?php }
