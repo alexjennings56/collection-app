@@ -1,8 +1,8 @@
 <?php
 
 require_once('functions.php');
-$db = getGuitarList();
-$guitars = getGuitar($db);
+$db = getGuitarDatabase();
+$guitars = getGuitarList($db);
 ?>
 <html>
 <head>
@@ -20,21 +20,8 @@ $guitars = getGuitar($db);
   </header>
   <section id="guitars">
       <?php
-      foreach ($guitars as $guitar) { ?>
-          <article class="guitar">
-              <img alt="<?php echo $guitar["brand"] ?>
-            Guitars"
-                   src="<?php echo $guitar["instrument_url"] ?>" />
-              <h1>
-                  Brand: <?php echo $guitar["brand"]; ?>
-                  | Style: <?php echo $guitar["style"]; ?>
-                  | Neck Wood: <?php echo $guitar["neckwood"]; ?>
-              </h1>
-          </article>
-      <?php }
+         echo displayGuitars($guitars);
       ?>
   </section>
 </body>
 </html>
-
-
