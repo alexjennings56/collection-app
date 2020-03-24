@@ -1,12 +1,8 @@
 <?php
 
-$db = new PDO('mysql:host=DB;dbname=collectiondb', 'root', 'password');
-
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-$query = $db->prepare('SELECT `brand`, `style`, `neckwood`, `instrument_url` FROM `guitars`;');
-$query->execute();
-$data = $query->fetchAll();
-
+require_once('functions.php');
+$db = getGuitarList();
+$guitars = getGuitar($db);
 ?>
 <html>
 <head>
@@ -24,15 +20,15 @@ $data = $query->fetchAll();
   </header>
   <section id="guitars">
       <?php
-      foreach ($data as $guitar) { ?>
+      foreach ($guitars as $guitar) { ?>
           <article class="guitar">
               <img alt="<?php echo $guitar["brand"] ?>
             Guitars"
                    src="<?php echo $guitar["instrument_url"] ?>" />
               <h1>
-                  Brand: <?php echo $guitar["brand"]; ?><br>
-                  Style: <?php echo $guitar["style"]; ?><br>
-                  Neck Wood: <?php echo $guitar["neckwood"]; ?>
+                  Brand: <?php echo $guitar["brand"]; ?>
+                  | Style: <?php echo $guitar["style"]; ?>
+                  | Neck Wood: <?php echo $guitar["neckwood"]; ?>
               </h1>
           </article>
       <?php }
