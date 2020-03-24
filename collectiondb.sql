@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectiondb
-# Generation Time: 2020-03-23 16:23:22 +0000
+# Generation Time: 2020-03-24 09:29:42 +0000
 # ************************************************************
 
 
@@ -30,22 +30,23 @@ CREATE TABLE `guitars` (
   `brand` varchar(100) DEFAULT NULL,
   `style` varchar(100) DEFAULT NULL,
   `neckwood` varchar(100) DEFAULT NULL,
+  `instrument_url` varchar(255) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `guitars` WRITE;
 /*!40000 ALTER TABLE `guitars` DISABLE KEYS */;
 
-INSERT INTO `guitars` (`id`, `brand`, `style`, `neckwood`)
+INSERT INTO `guitars` (`id`, `brand`, `style`, `neckwood`, `instrument_url`)
 VALUES
-	(1,'Fender','Stratocaster','Rosewood'),
-	(2,'Fender','Stratocaster','Maple'),
-	(3,'Fender','Telecaster','Rosewood'),
-	(4,'Fender','Telecaster','Maple'),
-	(5,'Fender','P Bass','Rosewood'),
-	(6,'Fender','P Bass','Maple'),
-	(7,'Fender','Jazz Base','Rosewood'),
-	(8,'Fender','Jazz Base','Maple');
+	(1,'Fender','Stratocaster','Rosewood','https://andertons-productimages.imgix.net/351619-0113010700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(2,'Fender','Stratocaster','Maple','https://andertons-productimages.imgix.net/351635-0113012700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(3,'Fender','Telecaster','Rosewood','https://andertons-productimages.imgix.net/347985-0113060700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(4,'Fender','Telecaster','Maple','https://andertons-productimages.imgix.net/348009-0113062700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(5,'Fender','P Bass','Rosewood','https://andertons-productimages.imgix.net/344839-0193610776_gtr_frt_001_rr.png?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(6,'Fender','P Bass','Maple','https://andertons-productimages.imgix.net/339685-0193612776%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(7,'Fender','Jazz Base','Rosewood','https://andertons-productimages.imgix.net/350640-0193900748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(8,'Fender','Jazz Base','Maple','https://andertons-productimages.imgix.net/350605-0193902748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2');
 
 /*!40000 ALTER TABLE `guitars` ENABLE KEYS */;
 UNLOCK TABLES;

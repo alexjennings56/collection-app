@@ -33,23 +33,5 @@ body {
   }
 }
 
-.collectionholder {
-	background-color: #D2B48C;
-	width: 100%;
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-}
 
-.guitars {
-	width: 25%;
-	float: left;
-	margin: auto;
-	padding: 10px;
-}
-
-.guitars img {
-	width: 100%;
-	background-color: #000000;
-}
 
