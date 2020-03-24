@@ -24,14 +24,22 @@ $data = $query->fetchAll();
     </div>
 </header>
 <section id="guitars">
-    <?php foreach ($data as $guitar) { ?>
+
+    <?php
+    foreach ($data as $guitar) { ?>
         <article class="guitar">
-            <img alt="<?php echo $guitar["brand"] ?> Guitars" src="<?php echo $guitar["instrument_url"] ?>" />
+            <img alt="<?php echo $guitar["brand"] ?>
+            Guitars"
+                 src="<?php echo $guitar["instrument_url"] ?>" />
             <h1>
-                Brand: <?php echo $guitar["brand"]; ?><br> Style: <?php echo $guitar["style"]; ?><br> Neck Wood: <?php echo $guitar["neckwood"]; ?>
+                Brand: <?php echo $guitar["brand"]; ?><br>
+                Style: <?php echo $guitar["style"]; ?><br>
+                Neck Wood: <?php echo $guitar["neckwood"]; ?>
             </h1>
         </article>
-    <?php } ?>
+    <?php }
+    ?>
+
 </section>
 <!--<section id="collection" class="collectionholder">-->
 <!--    <div class="projects">-->
