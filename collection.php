@@ -15,13 +15,13 @@ $data = $query->fetchAll();
     <meta name="viewport" content="width=device-width,initial-scales=1"/>
 </head>
 <body>
-<header class="topheader">
-    <div class="logo">
-        <div class="logotext">
-            <h1>GUITAR COLLECTION</h1>
-        </div>
-    </div>
-</header>
+  <header class="topheader">
+      <div class="logo">
+          <div class="logotext">
+              <h1>GUITAR COLLECTION</h1>
+          </div>
+      </div>
+  </header>
 <section id="guitars">
     <?php
     foreach ($data as $guitar) { ?>
@@ -40,6 +40,5 @@ $data = $query->fetchAll();
 </section>
 </body>
 </html>
-
 
 
