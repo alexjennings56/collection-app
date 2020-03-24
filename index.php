@@ -1,0 +1,27 @@
+<?php
+
+require_once('functions.php');
+$db = getGuitarDatabase();
+$guitars = getGuitarList($db);
+?>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="collection.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width,initial-scales=1"/>
+</head>
+<body>
+  <header class="topheader">
+      <div class="logo">
+          <div class="logotext">
+              <h1>GUITAR COLLECTION</h1>
+          </div>
+      </div>
+  </header>
+  <section id="guitars">
+      <?php
+         echo displayGuitars($guitars);
+      ?>
+  </section>
+</body>
+</html>
