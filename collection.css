@@ -1,0 +1,77 @@
+*{
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+.topheader {
+	position: relative;
+	top: 0;
+}
+
+.logo {
+	background-color: #D2B48C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-bottom: solid;
+}
+
+.logotext {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	width: 60%;
+}
+@media only screen and (max-width: 900px) {
+  .logotext {
+	  font-size: 1rem;
+  }
+}
+
+.guitar {
+	width: 25%;
+	float: left;
+	margin: auto;
+	border: solid;
+}
+
+.guitar img {
+	float: right;
+	margin: auto;
+	padding: 10px;
+	width: 100%;
+	line-height: 20px;
+}
+
+.guitar h1 {
+	font-size: 1.5rem;
+	padding: 10px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1520px) {
+	.guitar {
+		width: 33.3%;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.guitar {
+		width: 50%;
+	}
+	.guitar img {
+		border-left: none;
+		border-right: none;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.guitar {
+		width: 100%;
+	}
+}
+
+
