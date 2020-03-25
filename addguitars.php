@@ -9,6 +9,7 @@
     <div class="logo">
         <div class="logotext">
             <h1>ADD A GUITAR TO YOUR COLLECTION!</h1>
+            <a href="http://localhost:1234/collection-app/index.php">--See Collection--</a>
         </div>
     </div>
 </header>
@@ -18,7 +19,7 @@
             <div class="formholder">
                 <div class="guitar_brand">
                     <label>
-                        <input required name="brand" type="text" placeholder="Guitar Brand"/>
+                        <input required name="brand" type="text" placeholder="Guitar Brand" />
                     </label>
                 </div>
                 <div class="guitar_style">
@@ -38,9 +39,9 @@
                 </div>
                 <div>
                     <label>
-                <button type="button" class="bshopnow">Add Guitar</button>
+                        <button type="button" class="bshopnow">Add Guitar</button>
                     </label>
-                    <div>
+                </div>
             </div>
         </form>
     </section>
