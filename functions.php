@@ -50,3 +50,14 @@ function addGuitarToDatabase(PDO $db, array $guitars): void {
         $guitars["instrument_url"]
     ]);
 }
+
+function getErrorMessage($code): string{
+    $errors=[
+        "You must supply a brand",
+        "You must supply a style",
+        "You must supply a valid andertons image address",
+        "You must supply a valid year",
+        "You must supply a valid year",
+        "You must supply a valid year"];
+    return $errors[$code];
+}

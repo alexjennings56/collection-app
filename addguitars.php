@@ -1,3 +1,7 @@
+<?php
+require_once ("functions.php");
+?>
+
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="collection.css"/>
@@ -14,6 +18,13 @@
     </div>
 </header>
 <main>
+    <div class="error">
+    <?php
+    if (isset($_GET["error"])){
+        echo getErrorMessage($_GET["error"]);
+    }
+    ?>
+    </div>
     <section id="add_guitar">
         <form method="post" action="add.php">
             <div class="formholder">
@@ -34,7 +45,7 @@
                 </div>
                 <div class="guitar_year">
                     <label>
-                        <input required name="year" type="text" placeholder="Year of Production" />
+                        <input required name="year" type="number" placeholder="Year of Production" />
                     </label>
                 </div>
                 <div>

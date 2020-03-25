@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.29)
 # Database: collectiondb
-# Generation Time: 2020-03-24 09:29:42 +0000
+# Generation Time: 2020-03-25 16:13:09 +0000
 # ************************************************************
 
 
@@ -29,7 +29,7 @@ CREATE TABLE `guitars` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `brand` varchar(100) DEFAULT NULL,
   `style` varchar(100) DEFAULT NULL,
-  `neckwood` varchar(100) DEFAULT NULL,
+  `year` varchar(100) DEFAULT NULL,
   `instrument_url` varchar(255) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -37,16 +37,20 @@ CREATE TABLE `guitars` (
 LOCK TABLES `guitars` WRITE;
 /*!40000 ALTER TABLE `guitars` DISABLE KEYS */;
 
-INSERT INTO `guitars` (`id`, `brand`, `style`, `neckwood`, `instrument_url`)
+INSERT INTO `guitars` (`id`, `brand`, `style`, `year`, `instrument_url`)
 VALUES
-	(1,'Fender','Stratocaster','Rosewood','https://andertons-productimages.imgix.net/351619-0113010700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(2,'Fender','Stratocaster','Maple','https://andertons-productimages.imgix.net/351635-0113012700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(3,'Fender','Telecaster','Rosewood','https://andertons-productimages.imgix.net/347985-0113060700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(4,'Fender','Telecaster','Maple','https://andertons-productimages.imgix.net/348009-0113062700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(5,'Fender','P Bass','Rosewood','https://andertons-productimages.imgix.net/344839-0193610776_gtr_frt_001_rr.png?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(6,'Fender','P Bass','Maple','https://andertons-productimages.imgix.net/339685-0193612776%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(7,'Fender','Jazz Base','Rosewood','https://andertons-productimages.imgix.net/350640-0193900748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
-	(8,'Fender','Jazz Base','Maple','https://andertons-productimages.imgix.net/350605-0193902748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2');
+	(1,'Fender','Stratocaster','2020','https://andertons-productimages.imgix.net/351619-0113010700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(2,'Fender','Stratocaster','2020','https://andertons-productimages.imgix.net/351635-0113012700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(3,'Fender','Telecaster','2020','https://andertons-productimages.imgix.net/347985-0113060700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(4,'Fender','Telecaster','2020','https://andertons-productimages.imgix.net/348009-0113062700%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(5,'Fender','P Bass','2020','https://andertons-productimages.imgix.net/344839-0193610776_gtr_frt_001_rr.png?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(6,'Fender','P Bass','2020','https://andertons-productimages.imgix.net/339685-0193612776%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(7,'Fender','Jazz Base','2020','https://andertons-productimages.imgix.net/350640-0193900748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(8,'Fender','Jazz Base','2020','https://andertons-productimages.imgix.net/350605-0193902748%20%281%29.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(10,'Gibson ','Les Paul 1959 Custom Shop','2016','https://andertons-productimages.imgix.net/379857-Gibson%20Custom%20Shop%2060th%20Anniversary%201960%20Les%20Paul%20Standard%20V1%20VOS%20Antiquity%20Burst%202.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(13,'gfdhgs','fdsgsag','2019','https://andertons-productimages.imgix.net/360429-Fender-American-Ultra-Jazzmaster-Ultraburst-Full.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(14,'gfsg','gfdgd','2345','https://andertons-productimages.imgix.net/360429-Fender-American-Ultra-Jazzmaster-Ultraburst-Full.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2'),
+	(15,'rewrwr','rewrew','2012','https://andertons-productimages.imgix.net/360429-Fender-American-Ultra-Jazzmaster-Ultraburst-Full.jpg?w=768&h=768&fit=fill&bg=FFFFFF&auto=format&ixlib=imgixjs-3.3.2');
 
 /*!40000 ALTER TABLE `guitars` ENABLE KEYS */;
 UNLOCK TABLES;
