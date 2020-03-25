@@ -19,6 +19,13 @@ $guitars = getGuitarList($db);
           </div>
       </div>
   </header>
+      <div class="success">
+  <?php
+  if (!empty($_GET["success"])){
+      echo "guitar added successfully!";
+  }
+  ?>
+      </div>
   <section id="guitars">
       <?php
          echo displayGuitars($guitars);

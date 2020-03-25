@@ -34,6 +34,24 @@ a {
 	width: 100%;
 }
 
+.success {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: #4169E1;
+}
+
+.error {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: #DC143C;
+}
+
 .guitar {
 	width: 25%;
 	float: left;
