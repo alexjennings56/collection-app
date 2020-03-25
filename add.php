@@ -29,8 +29,7 @@ if ($_POST["year"]<0){
 if (isset($error)){
     header("Location: addguitars.php?error=". $error);
     die();
-}
-else{
+}else{
     $db = getGuitarDatabase();
     addGuitarToDatabase($db, $_POST);
 
