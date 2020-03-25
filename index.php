@@ -15,6 +15,7 @@ $guitars = getGuitarList($db);
       <div class="logo">
           <div class="logotext">
               <h1>GUITAR COLLECTION</h1>
+              <a href="http://localhost:1234/collection-app/addguitars.php">--Add Guitar To Collection--</a>
           </div>
       </div>
   </header>

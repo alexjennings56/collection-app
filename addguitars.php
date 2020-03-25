@@ -9,16 +9,17 @@
     <div class="logo">
         <div class="logotext">
             <h1>ADD A GUITAR TO YOUR COLLECTION!</h1>
+            <a href="http://localhost:1234/collection-app/index.php">--See Collection--</a>
         </div>
     </div>
 </header>
 <main>
     <section id="add_guitar">
-        <form method="post" action="src/addguitar.php">
+        <form method="post" action="add.php">
             <div class="formholder">
                 <div class="guitar_brand">
                     <label>
-                        <input required name="brand" type="text" placeholder="Guitar Brand"/>
+                        <input required name="brand" type="text" placeholder="Guitar Brand" />
                     </label>
                 </div>
                 <div class="guitar_style">
@@ -31,16 +32,16 @@
                         <input required name="instrument_url" type="url" placeholder="Andertons Image URL" />
                     </label>
                 </div>
-                <div class="guitar_neckwood">
+                <div class="guitar_year">
                     <label>
-                        <input required name="neckwood" type="text" placeholder="Neck Wood Material" />
+                        <input required name="year" type="text" placeholder="Year of Production" />
                     </label>
                 </div>
                 <div>
                     <label>
-                <button type="button" class="bshopnow">Add Guitar</button>
+                        <button type="submit" class="bshopnow">Add Guitar</button>
                     </label>
-                    <div>
+                </div>
             </div>
         </form>
     </section>
