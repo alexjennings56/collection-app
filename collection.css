@@ -27,11 +27,6 @@ body {
 	font-family: "spartan";
 	width: 60%;
 }
-@media only screen and (max-width: 900px) {
-  .logotext {
-	  font-size: 1rem;
-  }
-}
 
 .guitar {
 	width: 25%;
@@ -54,6 +49,51 @@ body {
 	text-align: center;
 }
 
+.formholder {
+	padding: 100px;
+}
+
+input {
+	width: 60%;
+	text-align: center;
+}
+
+label {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.guitar_brand {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.guitar_style {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.andertons_url {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.guitar_neckwood {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+button {
+	width: 20%;
+	text-align: center;
+	background-color: #DCDCDC;
+}
+
 @media only screen and (max-width: 1520px) {
 	.guitar {
 		width: 33.3%;
@@ -71,6 +111,11 @@ body {
 @media only screen and (max-width: 800px) {
 	.guitar {
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.logotext {
+		font-size: 1rem;
 	}
 }
 
