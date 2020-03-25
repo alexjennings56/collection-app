@@ -45,7 +45,7 @@ require_once ("functions.php");
                 </div>
                 <div class="guitar_year">
                     <label>
-                        <input required name="year" type="text" placeholder="Year of Production" />
+                        <input required name="year" type="number" placeholder="Year of Production" />
                     </label>
                 </div>
                 <div>
