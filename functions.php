@@ -10,7 +10,7 @@ function getGuitarDatabase(): PDO
 
 function getGuitarList(PDO $db): array
 {
-    $query = $db->prepare("SELECT `brand`, `style`, `neckwood`, `instrument_url` FROM `guitars`");
+    $query = $db->prepare("SELECT `brand`, `style`, `year`, `instrument_url` FROM `guitars`");
     $query->execute();
 
     return $query->fetchAll();
@@ -34,9 +34,19 @@ function displayGuitars($guitars): string{
             <h1>
                 Brand: ' . $guitar["brand"] . '
                 | Style: ' . $guitar["style"] . '
-                | Neck Wood: ' . $guitar["neckwood"] . '
+                | Year: ' . $guitar["year"] . '
             </h1>
         </article>';
     }
     return $return;
+}
+
+function addGuitarToDatabase(PDO $db, array $guitars): void {
+    $query = $db->prepare("INSERT INTO `guitars` (`brand`, `style`, `year`, `instrument_url`) VALUES (?, ?, ?, ?)");
+    $query->execute([
+        $guitars["brand"],
+        $guitars["style"],
+        $guitars["year"],
+        $guitars["instrument_url"]
+    ]);
 }

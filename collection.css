@@ -39,6 +39,7 @@ a {
 	float: left;
 	margin: auto;
 	border: solid;
+	font-family: "spartan";
 }
 
 .guitar img {
@@ -88,7 +89,7 @@ label {
 	padding: 30px;
 }
 
-.guitar_neckwood {
+.guitar_year {
 	display: flex;
 	justify-content: center;
 	padding: 30px;

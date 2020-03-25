@@ -15,7 +15,7 @@
 </header>
 <main>
     <section id="add_guitar">
-        <form method="post" action="src/addguitar.php">
+        <form method="post" action="add.php">
             <div class="formholder">
                 <div class="guitar_brand">
                     <label>
@@ -32,14 +32,14 @@
                         <input required name="instrument_url" type="url" placeholder="Andertons Image URL" />
                     </label>
                 </div>
-                <div class="guitar_neckwood">
+                <div class="guitar_year">
                     <label>
-                        <input required name="neckwood" type="text" placeholder="Neck Wood Material" />
+                        <input required name="year" type="text" placeholder="Year of Production" />
                     </label>
                 </div>
                 <div>
                     <label>
-                        <button type="button" class="bshopnow">Add Guitar</button>
+                        <button type="submit" class="bshopnow">Add Guitar</button>
                     </label>
                 </div>
             </div>
