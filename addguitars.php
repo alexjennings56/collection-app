@@ -13,7 +13,7 @@ require_once ("functions.php");
     <div class="logo">
         <div class="logotext">
             <h1>ADD A GUITAR TO YOUR COLLECTION!</h1>
-            <a href="http://localhost:1234/collection-app/index.php">--See Collection--</a>
+            <a href="index.php">--See Collection--</a>
         </div>
     </div>
 </header>

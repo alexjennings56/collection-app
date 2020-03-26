@@ -24,7 +24,7 @@ function getGuitarBrandAndStyle(array $guitars): string {
     return "";
 }
 
-function displayGuitars($guitars): string{
+function displayGuitars($guitars): string {
     $return = '';
     foreach ($guitars as $guitar) {
         $return .= '<article class="guitar">';
@@ -42,22 +42,21 @@ function displayGuitars($guitars): string{
 }
 
 function addGuitarToDatabase(PDO $db, array $guitars): void {
-    $query = $db->prepare("INSERT INTO `guitars` (`brand`, `style`, `year`, `instrument_url`) VALUES (?, ?, ?, ?)");
-    $query->execute([
-        $guitars["brand"],
-        $guitars["style"],
-        $guitars["year"],
-        $guitars["instrument_url"]
-    ]);
+    $query = $db->prepare("INSERT INTO `guitars` (`brand`, `style`, `year`, `instrument_url`) VALUES (:brand, :style, :year, :instrument_url)");
+    $query->execute($guitars);
 }
 
-function getErrorMessage($code): string{
-    $errors=[
+function getErrorMessage($code): string {
+    $errors = [
         "You must supply a brand",
         "You must supply a style",
         "You must supply a valid andertons image address",
         "You must supply a valid year",
         "You must supply a valid year",
         "You must supply a valid year"];
-    return $errors[$code];
+    if (array_key_exists($code, $errors)) {
+        return $errors[$code];
+    } else {
+        return "";
+    }
 }
