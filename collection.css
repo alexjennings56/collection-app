@@ -8,6 +8,11 @@ body {
 	font-size: 62.5%;
 }
 
+
+a {
+	font-size: 1.5rem;
+}
+
 .topheader {
 	position: relative;
 	top: 0;
@@ -20,17 +25,31 @@ body {
 	align-items: center;
 	text-align: center;
 	border-bottom: solid;
+	padding: 20px;
 }
 
 .logotext {
 	font-size: 1.8rem;
 	font-family: "spartan";
-	width: 60%;
+	width: 100%;
 }
-@media only screen and (max-width: 900px) {
-  .logotext {
-	  font-size: 1rem;
-  }
+
+.success {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: #4169E1;
+}
+
+.error {
+	font-size: 1.8rem;
+	font-family: "spartan";
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	color: #DC143C;
 }
 
 .guitar {
@@ -38,6 +57,7 @@ body {
 	float: left;
 	margin: auto;
 	border: solid;
+	font-family: "spartan";
 }
 
 .guitar img {
@@ -52,6 +72,51 @@ body {
 	font-size: 1.5rem;
 	padding: 10px;
 	text-align: center;
+}
+
+.formholder {
+	padding: 100px;
+}
+
+input {
+	width: 60%;
+	text-align: center;
+}
+
+label {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.guitar_brand {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.guitar_style {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.andertons_url {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+.guitar_year {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+
+button {
+	width: 20%;
+	text-align: center;
+	background-color: #DCDCDC;
 }
 
 @media only screen and (max-width: 1520px) {
@@ -71,6 +136,11 @@ body {
 @media only screen and (max-width: 800px) {
 	.guitar {
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.logotext {
+		font-size: 1rem;
 	}
 }
 

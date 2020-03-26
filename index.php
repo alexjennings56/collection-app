@@ -15,9 +15,17 @@ $guitars = getGuitarList($db);
       <div class="logo">
           <div class="logotext">
               <h1>GUITAR COLLECTION</h1>
+              <a href="addguitars.php">--Add Guitar To Collection--</a>
           </div>
       </div>
   </header>
+      <div class="success">
+  <?php
+  if (!empty($_GET["success"])){
+      echo "guitar added successfully!";
+  }
+  ?>
+      </div>
   <section id="guitars">
       <?php
          echo displayGuitars($guitars);
